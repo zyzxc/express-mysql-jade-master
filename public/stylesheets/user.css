@@ -1,0 +1,58 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.content {
+    color: red
+}
+
+.wrapper {
+    width: 360px;
+    border: 1px dashed #e6e6e6;
+}
+
+.wrapper .label {
+    display: inline-block;
+    width: 98px;
+    text-align: right;
+    color: #8c8c8c;
+    vertical-align: middle;
+}
+
+.wrapper .input-box {
+    color: #999;
+    overflow: hidden;
+    position: relative;
+    margin: 5px;
+    display: inline-block;
+}
+
+.input-text {
+    background: url(../images/inb.jpg) repeat-x top;
+    border: 1px solid #d3d3d3;
+    height: 21px;
+    line-height: 21px;
+    padding: 0 3px;
+}
+
+.submitBtn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    padding-right: 80px;
+}
+
+.login {
+    border: 1px solid #1488ff;
+    background: #11a1fd;
+    color: #ffffff;
+    border-radius: 2px;
+    padding: 4px 6px;
+    margin-left: 5px;
+    text-decoration: none;
+}

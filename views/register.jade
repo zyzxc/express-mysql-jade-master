@@ -1,0 +1,20 @@
+extends layout
+
+block content
+    .wrapper
+        input(name='id',type='hidden')
+        .input-box
+            label.label 用户编码：
+            input(name='code',class='input-text')
+        .input-box
+            label.label 姓名：
+            input(name='name',class='input-text')
+        .input-box
+            label.label 密码：
+            input(name='password',class='input-text')
+        .input-box
+            label.label 邮箱：
+            input(name='email',class='input-text')
+        .submitBtn
+            input.login(id='regBtn',type='button',value='注册')
+    script(src='/business/register.js')

@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    .wrapper
+        .input-box
+            label.label 用户编码：
+            input(name='code',class='input-text')
+        .input-box
+            label.label 密码：
+            input(name='password',class='input-text')
+        .submitBtn
+            input.login(id='regBtn',type='button',value='登录')
+    script(src='/business/login.js')

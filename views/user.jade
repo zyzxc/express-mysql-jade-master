@@ -1,0 +1,44 @@
+extends layout
+
+block content
+    input(id='edit',type='button',value='编辑',class='login')
+    input(id='delete',type='button',value='删除',class='login')
+    input(id='keyWord',type='text',class='input-text')
+    input(id='search',type='button',value='查询',class='login')
+    input(id='save',type='button',value='保存',class='login')
+    .wrapper
+        input(name='id',type='hidden')
+        .input-box
+           label.label 用户编码：
+           input(name='code',class='input-text')
+        .input-box
+           label.label 姓名：
+           input(name='name',class='input-text')
+        .input-box
+            label.label 密码：
+            input(name='password',class='input-text')
+        .input-box
+           label.label 邮箱：
+           input(name='email',class='input-text')
+        .submitBtn
+           input.login(id='add',type='button',value='增加')
+    table
+        thead
+            tr
+            - list = ["checkbox","编码", "姓名", "邮箱","出生日期"]
+            each item in list
+               - if(item == "checkbox")
+                  th
+                      input(type='checkbox')
+               - else
+                  th= item
+        tbody
+            each user in users
+                tr
+                    td
+                        input(type='checkbox' data-id='#{user.id}')
+                    td(class='code') #{user.code}
+                    td(class='name') #{user.name}
+                    td(class='email') #{user.email}
+                    td(class='birth') #{user.add_time}
+    script(src='/business/user.js')
